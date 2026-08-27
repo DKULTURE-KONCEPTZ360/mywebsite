@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CryptoVest Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <div class="logo-icon">₿</div>
+                <span>CryptoVest</span>
+            </div>
+
+            <nav>
+
+                <a href="#" class="nav-item active">
+                    <span>⌂</span>
+                    Dashboard
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span>↗</span>
+                    Investments
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span>◈</span>
+                    Wallet
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span>↔</span>
+                    Transactions
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span>▣</span>
+                    Investment Plans
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span>⚙</span>
+                    Settings
+                </a>
+
+            </nav>
+
+            <div class="sidebar-bottom">
+
+                <div class="support-box">
+                    <div class="support-icon">?</div>
+
+                    <div>
+                        <strong>Need help?</strong>
+                        <p>Contact support</p>
+                    </div>
+                </div>
+
+                <button class="logout">
+                    ↪ Log out
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main">
+
+            <!-- TOP BAR -->
+            <header class="topbar">
+
+                <div>
+                    <h1>Dashboard</h1>
+                    <p>Welcome back, Alex 👋</p>
+                </div>
+
+                <div class="top-actions">
+
+                    <button class="notification">
+                        🔔
+                        <span></span>
+                    </button>
+
+                    <div class="profile">
+
+                        <div class="avatar">
+                            A
+                        </div>
+
+                        <div>
+                            <strong>Alex Johnson</strong>
+                            <small>Investor</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- BALANCE CARDS -->
+            <section class="balance-grid">
+
+                <div class="balance-card primary">
+
+                    <div class="card-header">
+                        <span>Total Balance</span>
+                        <span class="dots">•••</span>
+                    </div>
+
+                    <h2>$48,625.40</h2>
+
+                    <div class="growth">
+                        +12.84%
+                        <span>this month</span>
+                    </div>
+
+                    <div class="chart">
+                        <div class="chart-line"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="balance-card">
+
+                    <div class="card-header">
+                        <span>Total Invested</span>
+                        <span class="card-symbol">◈</span>
+                    </div>
+
+                    <h2>$35,000.00</h2>
+
+                    <div class="positive">
+                        +$13,625.40
+                    </div>
+
+                    <p class="muted">Total profit</p>
+
+                </div>
+
+
+                <div class="balance-card">
+
+                    <div class="card-header">
+                        <span>Available Balance</span>
+                        <span class="card-symbol">◉</span>
+                    </div>
+
+                    <h2>$13,625.40</h2>
+
+                    <div class="positive">
+                        Ready to withdraw
+                    </div>
+
+                    <p class="muted">Available funds</p>
+
+                </div>
+
+            </section>
+
+
+            <!-- ACTION BUTTONS -->
+            <section class="quick-actions">
+
+                <button class="action-button deposit">
+                    <span>＋</span>
+                    Deposit
+                </button>
+
+                <button class="action-button">
+                    <span>↗</span>
+                    Invest
+                </button>
+
+                <button class="action-button">
+                    <span>↓</span>
+                    Withdraw
+                </button>
+
+            </section>
+
+
+            <!-- CONTENT GRID -->
+            <section class="content-grid">
+
+                <!-- INVESTMENTS -->
+                <div class="panel investments-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h3>My Investments</h3>
+                            <p>Your active investment plans</p>
+                        </div>
+
+                        <button class="view-all">
+                            View all →
+                        </button>
+
+                    </div>
+
+
+                    <div class="investment">
+
+                        <div class="coin bitcoin">
+                            ₿
+                        </div>
+
+                        <div class="investment-info">
+                            <strong>Bitcoin Growth</strong>
+                            <span>BTC • 30 Days</span>
+                        </div>
+
+                        <div class="investment-value">
+                            <strong>$15,250.00</strong>
+                            <span>+18.50%</span>
+                        </div>
+
+                        <div class="status active-status">
+                            Active
+                        </div>
+
+                    </div>
+
+
+                    <div class="investment">
+
+                        <div class="coin ethereum">
+                            Ξ
+                        </div>
+
+                        <div class="investment-info">
+                            <strong>Ethereum Plus</strong>
+                            <span>ETH • 60 Days</span>
+                        </div>
+
+                        <div class="investment-value">
+                            <strong>$12,500.00</strong>
+                            <span>+11.20%</span>
+                        </div>
+
+                        <div class="status active-status">
+                            Active
+                        </div>
+
+                    </div>
+
+
+                    <div class="investment">
+
+                        <div class="coin usdt">
+                            ₮
+                        </div>
+
+                        <div class="investment-info">
+                            <strong>USDT Stable</strong>
+                            <span>USDT • 90 Days</span>
+                        </div>
+
+                        <div class="investment-value">
+                            <strong>$7,250.00</strong>
+                            <span>+8.75%</span>
+                        </div>
+
+                        <div class="status active-status">
+                            Active
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TRANSACTIONS -->
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h3>Recent Transactions</h3>
+                            <p>Your latest activity</p>
+                        </div>
+
+                        <button class="view-all">
+                            View all →
+                        </button>
+
+                    </div>
+
+
+                    <div class="transaction">
+
+                        <div class="transaction-icon deposit-icon">
+                            ↓
+                        </div>
+
+                        <div>
+                            <strong>Deposit</strong>
+                            <span>Aug 26, 2026</span>
+                        </div>
+
+                        <strong class="amount positive">
+                            +$5,000
+                        </strong>
+
+                    </div>
+
+
+                    <div class="transaction">
+
+                        <div class="transaction-icon invest-icon">
+                            ↗
+                        </div>
+
+                        <div>
+                            <strong>Investment</strong>
+                            <span>Aug 24, 2026</span>
+                        </div>
+
+                        <strong class="amount">
+                            -$3,000
+                        </strong>
+
+                    </div>
+
+
+                    <div class="transaction">
+
+                        <div class="transaction-icon profit-icon">
+                            $
+                        </div>
+
+                        <div>
+                            <strong>Investment Profit</strong>
+                            <span>Aug 22, 2026</span>
+                        </div>
+
+                        <strong class="amount positive">
+                            +$625
+                        </strong>
+
+                    </div>
+
+
+                    <div class="transaction">
+
+                        <div class="transaction-icon withdraw-icon">
+                            ↑
+                        </div>
+
+                        <div>
+                            <strong>Withdrawal</strong>
+                            <span>Aug 20, 2026</span>
+                        </div>
+
+                        <strong class="amount">
+                            -$1,200
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- INVESTMENT PLANS -->
+            <section class="plans-section">
+
+                <div class="section-heading">
+
+                    <div>
+                        <h3>Investment Plans</h3>
+                        <p>Choose a plan that fits your goals</p>
+                    </div>
+
+                </div>
+
+
+                <div class="plans">
+
+                    <div class="plan">
+
+                        <div class="plan-top">
+                            <span class="plan-name">STARTER</span>
+                            <span class="plan-badge">Popular</span>
+                        </div>
+
+                        <h2>5%</h2>
+                        <p>Estimated return</p>
+
+                        <div class="plan-details">
+                            <span>Minimum</span>
+                            <strong>$100</strong>
+                        </div>
+
+                        <div class="plan-details">
+                            <span>Duration</span>
+                            <strong>7 Days</strong>
+                        </div>
+
+                        <button class="plan-button">
+                            Invest Now
+                        </button>
+
+                    </div>
+
+
+                    <div class="plan featured">
+
+                        <div class="plan-top">
+                            <span class="plan-name">GROWTH</span>
+                            <span class="plan-badge">Recommended</span>
+                        </div>
+
+                        <h2>12%</h2>
+                        <p>Estimated return</p>
+
+                        <div class="plan-details">
+                            <span>Minimum</span>
+                            <strong>$500</strong>
+                        </div>
+
+                        <div class="plan-details">
+                            <span>Duration</span>
+                            <strong>30 Days</strong>
+                        </div>
+
+                        <button class="plan-button">
+                            Invest Now
+                        </button>
+
+                    </div>
+
+
+                    <div class="plan">
+
+                        <div class="plan-top">
+                            <span class="plan-name">PREMIUM</span>
+                            <span class="plan-badge">VIP</span>
+                        </div>
+
+                        <h2>25%</h2>
+                        <p>Estimated return</p>
+
+                        <div class="plan-details">
+                            <span>Minimum</span>
+                            <strong>$2,000</strong>
+                        </div>
+
+                        <div class="plan-details">
+                            <span>Duration</span>
+                            <strong>90 Days</strong>
+                        </div>
+
+                        <button class="plan-button">
+                            Invest Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

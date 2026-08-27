@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BUILT EVIL | Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+
+</head>
+
+
+<body>
+
+    <div class="dashboard">
+
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                BUILT <span>EVIL</span>
+            </div>
+
+
+            <div class="profile-section">
+
+                <div class="profile-picture">
+
+                    <img
+                        id="profileImage"
+                        src="https://via.placeholder.com/150"
+                        alt="Profile Picture"
+                    >
+
+                    <label for="profileUpload" class="camera-btn">
+                        📷
+                    </label>
+
+                    <input
+                        type="file"
+                        id="profileUpload"
+                        accept="image/*"
+                        hidden
+                    >
+
+                </div>
+
+
+                <h3 id="profileName">BUILT EVIL STORE</h3>
+
+                <p>Store Admin</p>
+
+            </div>
+
+
+            <nav>
+
+                <a href="#" class="nav-link active">
+                    📊 Dashboard
+                </a>
+
+                <a href="#available">
+                    👕 Available Wears
+                </a>
+
+                <a href="#sold">
+                    🔴 Sold Out
+                </a>
+
+                <a href="#upload">
+                    ⬆ Upload Clothes
+                </a>
+
+                <a href="#" id="logoutBtn">
+                    🚪 Logout
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+
+        <main class="main-content">
+
+
+            <!-- TOP HEADER -->
+
+            <header class="header">
+
+                <div>
+
+                    <h1>Store Dashboard</h1>
+
+                    <p>
+                        Manage your clothing collection and inventory.
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="upload-top-btn"
+                    onclick="scrollToUpload()"
+                >
+                    + Add New Wear
+                </button>
+
+            </header>
+
+
+            <!-- STATISTICS -->
+
+            <section class="stats">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon black">
+                        👕
+                    </div>
+
+                    <div>
+                        <p>Total Wears</p>
+
+                        <h2 id="totalClothes">
+                            0
+                        </h2>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon green">
+                        ✓
+                    </div>
+
+                    <div>
+                        <p>Available</p>
+
+                        <h2 id="availableCount">
+                            0
+                        </h2>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon red">
+                        ✕
+                    </div>
+
+                    <div>
+                        <p>Sold Out</p>
+
+                        <h2 id="soldOutCount">
+                            0
+                        </h2>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- UPLOAD SECTION -->
+
+            <section
+                class="upload-section"
+                id="upload"
+            >
+
+                <h2>Upload New Clothing Item</h2>
+
+                <p>
+                    Add new clothes to your clothing store.
+                </p>
+
+
+                <form id="productForm">
+
+                    <div class="form-grid">
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Clothing Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="productName"
+                                placeholder="Example: Oversized Black T-Shirt"
+                                required
+                            >
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Price
+                            </label>
+
+                            <input
+                                type="number"
+                                id="productPrice"
+                                placeholder="Example: 25000"
+                                required
+                            >
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Category
+                            </label>
+
+                            <select id="productCategory">
+
+                                <option>T-Shirt</option>
+                                <option>Hoodie</option>
+                                <option>Jeans</option>
+                                <option>Shorts</option>
+                                <option>Jacket</option>
+                                <option>Shoes</option>
+                                <option>Accessories</option>
+
+                            </select>
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Status
+                            </label>
+
+                            <select id="productStatus">
+
+                                <option value="available">
+                                    Available
+                                </option>
+
+                                <option value="sold">
+                                    Sold Out
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- IMAGE UPLOAD -->
+
+                    <div class="image-upload">
+
+                        <label for="productImage">
+
+                            <span>📷</span>
+
+                            <strong>
+                                Click to upload clothing picture
+                            </strong>
+
+                            <small>
+                                PNG, JPG or JPEG
+                            </small>
+
+                        </label>
+
+
+                        <input
+                            type="file"
+                            id="productImage"
+                            accept="image/*"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- IMAGE PREVIEW -->
+
+                    <div
+                        class="image-preview-container"
+                        id="previewContainer"
+                    >
+
+                        <img
+                            id="imagePreview"
+                            src=""
+                            alt="Preview"
+                        >
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="add-product-btn"
+                    >
+
+                        + Add Clothing Item
+
+                    </button>
+
+
+                </form>
+
+            </section>
+
+
+
+            <!-- AVAILABLE CLOTHES -->
+
+            <section
+                class="clothes-section"
+                id="available"
+            >
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h2>
+                            Available Wears
+                        </h2>
+
+                        <p>
+                            Clothes currently available for sale.
+                        </p>
+
+                    </div>
+
+
+                    <span
+                        class="count-badge"
+                        id="availableBadge"
+                    >
+                        0 Items
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="clothes-grid"
+                    id="availableClothes"
+                >
+
+                    <div class="empty-message">
+                        No available clothes yet.
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- SOLD OUT CLOTHES -->
+
+            <section
+                class="clothes-section"
+                id="sold"
+            >
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h2>
+                            Sold Out
+                        </h2>
+
+                        <p>
+                            Clothes that are no longer available.
+                        </p>
+
+                    </div>
+
+
+                    <span
+                        class="sold-badge"
+                        id="soldBadge"
+                    >
+                        0 Items
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="clothes-grid"
+                    id="soldOutClothes"
+                >
+
+                    <div class="empty-message">
+                        No sold out clothes yet.
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Checkout | BUILT EVIL</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<a href="index.html" class="logo">
+BUILT EVIL
+</a>
+
+</header>
+
+
+<main class="checkout">
+
+<h1>CHECKOUT</h1>
+
+
+<form onsubmit="placeOrder(event)">
+
+<h2>Delivery Information</h2>
+
+
+<label>Full Name</label>
+
+<input
+type="text"
+required>
+
+
+<label>Email</label>
+
+<input
+type="email"
+required>
+
+
+<label>Phone</label>
+
+<input
+type="tel"
+required>
+
+
+<label>Delivery Address</label>
+
+<textarea required></textarea>
+
+
+<h2>Payment</h2>
+
+<div class="payment-option">
+
+<input
+type="radio"
+name="payment"
+checked>
+
+Pay on Delivery
+
+</div>
+
+
+<div class="payment-option">
+
+<input
+type="radio"
+name="payment">
+
+Bank Transfer
+
+</div>
+
+
+<button class="btn full">
+PLACE ORDER
+</button>
+
+</form>
+
+</main>
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>

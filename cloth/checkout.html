@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout | BUILT EVIL</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        BUILT<span>EVIL</span>
+    </a>
+
+</header>
+
+
+<main class="checkout">
+
+    <div>
+
+        <h1>CHECKOUT</h1>
+
+        <form id="checkout-form">
+
+            <h2>CONTACT INFORMATION</h2>
+
+            <input
+                type="text"
+                id="checkout-name"
+                placeholder="Full Name"
+                required
+            >
+
+            <input
+                type="email"
+                id="checkout-email"
+                placeholder="Email"
+                required
+            >
+
+            <input
+                type="tel"
+                id="checkout-phone"
+                placeholder="Phone Number"
+                required
+            >
+
+            <h2>DELIVERY ADDRESS</h2>
+
+            <input
+                type="text"
+                id="checkout-address"
+                placeholder="Street Address"
+                required
+            >
+
+            <input
+                type="text"
+                id="checkout-city"
+                placeholder="City"
+                required
+            >
+
+            <input
+                type="text"
+                id="checkout-state"
+                placeholder="State"
+                required
+            >
+
+            <h2>PAYMENT</h2>
+
+            <select id="payment-method">
+
+                <option value="paystack">
+                    Pay with Paystack
+                </option>
+
+                <option value="bank">
+                    Bank Transfer
+                </option>
+
+                <option value="cod">
+                    Cash on Delivery
+                </option>
+
+            </select>
+
+            <button class="btn full">
+                PLACE ORDER
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <div class="checkout-summary">
+
+        <h2>YOUR ORDER</h2>
+
+        <div id="checkout-items"></div>
+
+        <h3>
+            Total:
+            <span id="checkout-total">₦0</span>
+        </h3>
+
+    </div>
+
+</main>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

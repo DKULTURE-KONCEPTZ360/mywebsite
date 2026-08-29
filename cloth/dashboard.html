@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | BUILT EVIL</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        BUILT<span>EVIL</span>
+    </a>
+
+    <nav>
+        <a href="shop.html">Shop</a>
+        <a href="orders.html">Orders</a>
+        <a href="contact.html">Customer Care</a>
+    </nav>
+
+    <a href="cart.html">
+        Cart (<span id="cart-count">0</span>)
+    </a>
+
+</header>
+
+
+<main class="dashboard">
+
+    <aside class="dashboard-menu">
+
+        <h2>MY ACCOUNT</h2>
+
+        <button onclick="showDashboard('overview')">
+            Overview
+        </button>
+
+        <button onclick="showDashboard('profile')">
+            Profile
+        </button>
+
+        <button onclick="location.href='orders.html'">
+            Orders
+        </button>
+
+        <button onclick="location.href='cart.html'">
+            Cart
+        </button>
+
+        <button onclick="logout()">
+            Sign Out
+        </button>
+
+    </aside>
+
+
+    <section class="dashboard-content">
+
+        <div id="overview">
+
+            <p class="small-title">WELCOME BACK</p>
+
+            <h1 id="dashboard-name">
+                BUILT EVIL CUSTOMER
+            </h1>
+
+            <div class="dashboard-cards">
+
+                <div>
+                    <span>ORDERS</span>
+                    <strong id="order-count">0</strong>
+                </div>
+
+                <div>
+                    <span>CART ITEMS</span>
+                    <strong id="dashboard-cart">0</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div id="profile" class="hidden">
+
+            <h1>PROFILE</h1>
+
+            <form id="profile-form">
+
+                <label>Name</label>
+
+                <input id="profile-name">
+
+                <label>Email</label>
+
+                <input id="profile-email" type="email">
+
+                <label>Phone</label>
+
+                <input id="profile-phone">
+
+                <label>Address</label>
+
+                <textarea id="profile-address"></textarea>
+
+                <button class="btn">
+                    SAVE PROFILE
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

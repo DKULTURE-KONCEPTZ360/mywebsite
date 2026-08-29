@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Your Cart | BUILT EVIL</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        BUILT<span>EVIL</span>
+    </a>
+
+    <nav>
+        <a href="shop.html">Continue Shopping</a>
+        <a href="dashboard.html">Account</a>
+    </nav>
+
+</header>
+
+
+<main class="cart-page">
+
+    <h1>YOUR CART</h1>
+
+    <div id="cart-items"></div>
+
+    <div class="cart-summary">
+
+        <h2>ORDER SUMMARY</h2>
+
+        <p>
+            Subtotal:
+            <strong id="cart-total">₦0</strong>
+        </p>
+
+        <p>
+            Shipping:
+            <strong>Calculated at checkout</strong>
+        </p>
+
+        <button
+            class="btn full"
+            onclick="goToCheckout()"
+        >
+            CHECKOUT
+        </button>
+
+    </div>
+
+</main>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
